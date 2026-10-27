@@ -1,0 +1,2 @@
+- Use character IDs, speaker names, voice style, emotion, and delivery notes.
+- Do not assign voices to unknown speakers without flagging.

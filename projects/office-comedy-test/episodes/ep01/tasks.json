@@ -1,0 +1,125 @@
+[
+  {
+    "task_id": "task_ep01_s001_image_v001",
+    "type": "image_generation",
+    "shot_id": "ep01_s001",
+    "episode_id": "ep01",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "provider": "codex_imagegen_subagent",
+    "model": "configure_supported_model",
+    "mode": "codex_subagent",
+    "generation_mode": "codex_subagent_imagegen",
+    "reference_mode": "text_only",
+    "provider_task_id": null,
+    "provider_request_id": null,
+    "status": "pending",
+    "version": 1,
+    "retry_count": 0,
+    "fallback_provider": null,
+    "prompt_file": "episodes/ep01/prompts/ep01_s001_image_v001.md",
+    "reference_images": [],
+    "first_frame_url": null,
+    "last_frame_url": null,
+    "provider_params": {
+      "aspect_ratio": "9:16",
+      "negative_prompt": "watermark, subtitles, readable text, distorted hands, extra main characters, brand logos"
+    },
+    "depends_on": [
+      "review_ep01_image_prompt_v001"
+    ],
+    "expected_output": "external:codex_imagegen:ep01_s001_image_v001",
+    "candidate_policy": {
+      "min_candidates": 2,
+      "max_candidates": 2,
+      "selection_reviewer": "asset-reviewer",
+      "compare_required": true
+    },
+    "quality_gate_status": "pending",
+    "stale": false,
+    "stale_reason": null,
+    "blocked_by": null,
+    "error": null
+  },
+  {
+    "task_id": "task_ep01_s002_image_v001",
+    "type": "image_generation",
+    "shot_id": "ep01_s002",
+    "episode_id": "ep01",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "provider": "codex_imagegen_subagent",
+    "model": "configure_supported_model",
+    "mode": "codex_subagent",
+    "generation_mode": "codex_subagent_imagegen",
+    "reference_mode": "text_only",
+    "provider_task_id": null,
+    "provider_request_id": null,
+    "status": "pending",
+    "version": 1,
+    "retry_count": 0,
+    "fallback_provider": null,
+    "prompt_file": "episodes/ep01/prompts/ep01_s002_image_v001.md",
+    "reference_images": [],
+    "first_frame_url": null,
+    "last_frame_url": null,
+    "provider_params": {
+      "aspect_ratio": "9:16",
+      "negative_prompt": "watermark, subtitles, readable text, distorted hands, extra main characters, brand logos"
+    },
+    "depends_on": [
+      "review_ep01_image_prompt_v001"
+    ],
+    "expected_output": "external:codex_imagegen:ep01_s002_image_v001",
+    "candidate_policy": {
+      "min_candidates": 2,
+      "max_candidates": 2,
+      "selection_reviewer": "asset-reviewer",
+      "compare_required": true
+    },
+    "quality_gate_status": "pending",
+    "stale": false,
+    "stale_reason": null,
+    "blocked_by": null,
+    "error": null
+  },
+  {
+    "task_id": "task_ep01_s003_image_v001",
+    "type": "image_generation",
+    "shot_id": "ep01_s003",
+    "episode_id": "ep01",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "provider": "codex_imagegen_subagent",
+    "model": "configure_supported_model",
+    "mode": "codex_subagent",
+    "generation_mode": "codex_subagent_imagegen",
+    "reference_mode": "text_only",
+    "provider_task_id": null,
+    "provider_request_id": null,
+    "status": "pending",
+    "version": 1,
+    "retry_count": 0,
+    "fallback_provider": null,
+    "prompt_file": "episodes/ep01/prompts/ep01_s003_image_v001.md",
+    "reference_images": [],
+    "first_frame_url": null,
+    "last_frame_url": null,
+    "provider_params": {
+      "aspect_ratio": "9:16",
+      "negative_prompt": "watermark, subtitles, readable text, distorted hands, extra main characters, brand logos"
+    },
+    "depends_on": [
+      "review_ep01_image_prompt_v001"
+    ],
+    "expected_output": "external:codex_imagegen:ep01_s003_image_v001",
+    "candidate_policy": {
+      "min_candidates": 2,
+      "max_candidates": 2,
+      "selection_reviewer": "asset-reviewer",
+      "compare_required": true
+    },
+    "quality_gate_status": "pending",
+    "stale": false,
+    "stale_reason": null,
+    "blocked_by": null,
+    "error": null
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Delivery Manifest",
+  "type": "object",
+  "required": ["schema_version", "episode_id", "packages"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["package_id", "format", "files"],
+        "properties": {
+          "package_id": { "type": "string" },
+          "format": { "type": "string" },
+          "files": { "type": "array", "items": { "type": "object" } },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

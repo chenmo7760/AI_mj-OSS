@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shot Route Plan",
+  "type": "object",
+  "required": ["schema_version", "episode_id", "routes"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["shot_id", "route", "reference_mode", "rationale"],
+        "properties": {
+          "shot_id": { "type": "string" },
+          "route": { "type": "string" },
+          "reference_mode": { "type": "string" },
+          "provider_id": { "type": ["string", "null"] },
+          "required_inputs": { "type": "array", "items": { "type": "string" } },
+          "missing_inputs": { "type": "array", "items": { "type": "string" } },
+          "rationale": { "type": "string" },
+          "review_status": { "type": "string" }
+        }
+      }
+    }
+  }
+}

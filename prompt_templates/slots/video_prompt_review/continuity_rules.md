@@ -1,0 +1,2 @@
+- Check character identity, costume, scene, props, camera motion, action handoff, and dialogue handling.
+- The prompt must not contradict start/end keyframes.

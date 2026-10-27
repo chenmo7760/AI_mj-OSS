@@ -1,0 +1,76 @@
+# Local and editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Codex/local worktrees and caches
+.codex/
+.codex-clones/
+.codex-worktrees/
+.codex-review-worktrees/
+.archived-worktrees/
+.review-worktrees/
+.playwright-mcp/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+
+# Logs and temporary output
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+__pycache__/
+*.py[cod]
+
+# Local open-source reference caches
+docs/open_source/_repos/
+
+# Generated media assets
+projects/**/assets/images/
+projects/**/assets/videos/
+projects/**/assets/video/
+projects/**/assets/audio/
+projects/**/assets/voice/
+projects/**/assets/**/*.png
+projects/**/assets/**/*.jpg
+projects/**/assets/**/*.jpeg
+projects/**/assets/**/*.webp
+projects/**/assets/**/*.gif
+projects/**/assets/**/*.mp4
+projects/**/assets/**/*.mov
+projects/**/assets/**/*.wav
+projects/**/assets/**/*.mp3
+projects/**/episodes/**/output/
+projects/**/episodes/**/renders/
+projects/**/episodes/**/delivery/*.zip
+projects/**/episodes/**/delivery/*.mp4
+
+# Local examples and raw experiments
+示例图/
+
+# OS/application artifacts
+desktop.ini
+*.lnk
+
+# Local generated check evidence and private datasets
+.local-checks/
+projects/**/episodes/**/reports/
+projects/**/episodes/**/provider_payloads/
+*.db
+*.sqlite
+*.sqlite3
+private-data/

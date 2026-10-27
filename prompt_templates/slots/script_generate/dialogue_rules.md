@@ -1,0 +1,2 @@
+- Dialogue should reveal character and action, not explain visuals already obvious.
+- Mark speaker, emotion, and whether the line is dialogue, narration, or inner thought.

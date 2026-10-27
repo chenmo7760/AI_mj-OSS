@@ -1,0 +1,2 @@
+- Record model, size, seed, prompt_extend, watermark, and negative_prompt when available.
+- Keep source prompt file and shot ID in metadata.

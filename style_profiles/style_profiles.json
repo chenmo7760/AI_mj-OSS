@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "styles": [
+    {
+      "style_profile_id": "style_motion_comic_v001",
+      "style_family": "motion_comic",
+      "display_name": "Color Motion-Comic Vertical Drama",
+      "intended_use": "Illustrated or comic-like AI drama where stable silhouettes, readable expressions, and stylized acting are more important than live-action realism.",
+      "positive_rules": [
+        "colorful motion-comic vertical drama",
+        "clear character silhouettes and stable facial anchors",
+        "cinematic lighting with illustrated or painterly finish",
+        "expressive but believable acting",
+        "consistent costume, hair, accessories, and scene palette"
+      ],
+      "negative_rules": [
+        "photorealistic live-action look unless explicitly approved",
+        "anime exaggeration that changes the intended age or identity",
+        "washed-out flat illustration",
+        "style switching between shots",
+        "visible captions, watermarks, logos, or UI text"
+      ],
+      "reference_policy": {
+        "character_reference_required_for_recurring_characters": true,
+        "recommended_views": ["front_full_body", "three_quarter", "side", "back", "head_closeup", "expression_sheet"],
+        "separate_reference_per_style": true
+      },
+      "review_rubric": {
+        "identity": "Face, hair, silhouette, costume, and signature accessories remain recognizable as the locked character.",
+        "style_match": "The result reads as motion-comic instead of live-action photography.",
+        "story_readability": "The shot communicates the intended beat in vertical 9:16.",
+        "continuity": "Lighting, palette, costume, and scene remain compatible with adjacent shots."
+      },
+      "manual_generation_notes": {
+        "codex_imagegen": "Ask for a colorful motion-comic still, clear line/painterly finish, stable character anchors, and no photorealistic live-action look.",
+        "gemini_video_web": "Paste the video prompt with the motion-comic style line intact; upload locked character or first/last frames when available; reject outputs that become live-action photos unless the shot has an approved override."
+      }
+    },
+    {
+      "style_profile_id": "style_live_action_light_realism_v001",
+      "style_family": "live_action_light_realism",
+      "display_name": "Live-Action Light Realism Vertical Drama",
+      "intended_use": "Actor-like vertical short-drama visuals with natural faces, practical lighting, and realistic locations while still avoiding celebrity likeness or uncontrolled identity drift.",
+      "positive_rules": [
+        "cinematic live-action vertical short drama",
+        "natural actor-like faces without celebrity likeness",
+        "realistic lighting, lens, wardrobe, and workplace or period-drama production design",
+        "subtle but readable acting",
+        "consistent hairstyle, costume, age, and body type"
+      ],
+      "negative_rules": [
+        "comic or anime rendering unless explicitly approved",
+        "celebrity likeness or recognizable real person",
+        "age drift, face drift, hairstyle drift, or costume drift",
+        "overly glossy stock-photo look",
+        "visible captions, watermarks, logos, or UI text"
+      ],
+      "reference_policy": {
+        "character_reference_required_for_recurring_characters": true,
+        "recommended_views": ["front_full_body", "three_quarter", "side", "back", "head_closeup", "expression_sheet"],
+        "separate_reference_per_style": true
+      },
+      "review_rubric": {
+        "identity": "The character feels like the same actor-like person across shots without copying a real celebrity.",
+        "style_match": "The result reads as light live-action realism instead of comic/anime illustration.",
+        "story_readability": "The action and emotion are readable in vertical 9:16.",
+        "continuity": "Costume, setting, lens feel, lighting, and age remain stable across adjacent shots."
+      },
+      "manual_generation_notes": {
+        "codex_imagegen": "Ask for cinematic live-action light realism, natural actor-like faces, realistic office or drama lighting, and no celebrity likeness.",
+        "gemini_video_web": "Use the live-action style line; upload first/last frames and references when available; reject outputs with celebrity likeness, face drift, or sudden comic/anime rendering."
+      }
+    }
+  ]
+}

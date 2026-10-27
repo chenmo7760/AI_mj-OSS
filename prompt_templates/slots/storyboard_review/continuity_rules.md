@@ -1,0 +1,3 @@
+- Check `continuity_from` / `continuity_to` links.
+- Check shared characters keep costume, props, scene logic, and action handoff.
+- High-risk adjacent shots need start/end frame intent.

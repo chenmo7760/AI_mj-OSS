@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Index",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["prompt_id", "shot_id", "prompt_type", "version", "prompt_file", "review_status", "frozen"],
+    "properties": {
+      "prompt_id": { "type": "string" },
+      "shot_id": { "type": "string" },
+      "prompt_type": { "type": "string" },
+      "prompt_key": { "type": ["string", "null"] },
+      "variant": { "type": ["string", "null"] },
+      "language": { "type": ["string", "null"] },
+      "style_profile_id": { "type": ["string", "null"] },
+      "version": { "type": "integer" },
+      "prompt_file": { "type": "string" },
+      "previous_prompt_id": { "type": ["string", "null"] },
+      "derived_from": { "type": "array", "items": { "type": "string" } },
+      "provider_target": { "type": ["string", "null"] },
+      "template_ref": { "type": ["string", "null"] },
+      "template_version": { "type": ["integer", "null"] },
+      "slot_contents": { "type": "object" },
+      "polish_history": { "type": "array", "items": { "type": "object" } },
+      "ab_test_group_id": { "type": ["string", "null"] },
+      "stale": { "type": "boolean" },
+      "stale_reason": { "type": ["string", "null"] },
+      "rollback_of": { "type": ["string", "null"] },
+      "change_reason": { "type": ["string", "null"] },
+      "review_status": { "type": "string" },
+      "review_file": { "type": ["string", "null"] },
+      "frozen": { "type": "boolean" },
+      "created_at": { "type": "string" }
+    }
+  }
+}

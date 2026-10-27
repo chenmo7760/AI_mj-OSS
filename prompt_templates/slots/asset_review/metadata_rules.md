@@ -1,0 +1,2 @@
+- Check asset ID, type, path, shot/episode binding, provider/model, prompt file, candidate group, dimensions/duration/checksum when available.
+- Missing provider metadata is a risk unless it blocks reproduction.

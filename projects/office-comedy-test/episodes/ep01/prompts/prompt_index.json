@@ -1,0 +1,113 @@
+[
+  {
+    "prompt_id": "prompt_ep01_s001_image_v001",
+    "shot_id": "ep01_s001",
+    "prompt_type": "image",
+    "prompt_key": "shot_image",
+    "variant": "baseline",
+    "language": "mixed_zh_en",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "version": 1,
+    "prompt_file": "episodes/ep01/prompts/ep01_s001_image_v001.md",
+    "previous_prompt_id": null,
+    "derived_from": [
+      "source_events:event_office_001",
+      "characters:char_demo_worker",
+      "characters:char_demo_manager",
+      "style_guide:v001",
+      "storyboard:ep01_s001"
+    ],
+    "provider_target": "codex_imagegen_subagent",
+    "template_ref": "shot_image",
+    "template_version": 1,
+    "slot_contents": {
+      "character_visual_hint": "Demo Worker: round glasses, white shirt, blue tie; Demo Manager: navy suit, red lanyard",
+      "reference_mode": "text_only_first_test",
+      "composition_rules": "doorway-to-meeting diagonal, bright office sitcom energy"
+    },
+    "polish_history": [],
+    "ab_test_group_id": null,
+    "stale": false,
+    "stale_reason": null,
+    "rollback_of": null,
+    "change_reason": "office comedy image-stage baseline",
+    "review_status": "pending",
+    "review_file": null,
+    "frozen": false,
+    "created_at": "2026-07-08"
+  },
+  {
+    "prompt_id": "prompt_ep01_s002_image_v001",
+    "shot_id": "ep01_s002",
+    "prompt_type": "image",
+    "prompt_key": "shot_image",
+    "variant": "baseline",
+    "language": "mixed_zh_en",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "version": 1,
+    "prompt_file": "episodes/ep01/prompts/ep01_s002_image_v001.md",
+    "previous_prompt_id": null,
+    "derived_from": [
+      "source_events:event_office_002",
+      "characters:char_demo_worker",
+      "characters:char_demo_manager",
+      "style_guide:v001",
+      "storyboard:ep01_s002"
+    ],
+    "provider_target": "codex_imagegen_subagent",
+    "template_ref": "shot_image",
+    "template_version": 1,
+    "slot_contents": {
+      "character_visual_hint": "Demo Worker panicking, Demo Manager deadpan, robot vacuum, sticky notes",
+      "reference_mode": "text_only_first_test",
+      "composition_rules": "robot vacuum lower right, sticky-note motion arcs, readable faces"
+    },
+    "polish_history": [],
+    "ab_test_group_id": null,
+    "stale": false,
+    "stale_reason": null,
+    "rollback_of": null,
+    "change_reason": "office comedy image-stage baseline",
+    "review_status": "pending",
+    "review_file": null,
+    "frozen": false,
+    "created_at": "2026-07-08"
+  },
+  {
+    "prompt_id": "prompt_ep01_s003_image_v001",
+    "shot_id": "ep01_s003",
+    "prompt_type": "image",
+    "prompt_key": "shot_image",
+    "variant": "baseline",
+    "language": "mixed_zh_en",
+    "style_profile_id": "style_live_action_light_realism_v001",
+    "version": 1,
+    "prompt_file": "episodes/ep01/prompts/ep01_s003_image_v001.md",
+    "previous_prompt_id": null,
+    "derived_from": [
+      "source_events:event_office_003",
+      "characters:char_demo_worker",
+      "characters:char_demo_manager",
+      "style_guide:v001",
+      "storyboard:ep01_s003"
+    ],
+    "provider_target": "codex_imagegen_subagent",
+    "template_ref": "shot_image",
+    "template_version": 1,
+    "slot_contents": {
+      "character_visual_hint": "Demo Manager serious with blank sticky note on face; Demo Worker frozen with coffee",
+      "reference_mode": "text_only_first_test",
+      "composition_rules": "medium close-up punchline, no readable text, blank sticky note"
+    },
+    "polish_history": [],
+    "ab_test_group_id": null,
+    "stale": false,
+    "stale_reason": null,
+    "rollback_of": null,
+    "change_reason": "office comedy image-stage baseline",
+    "review_status": "pending",
+    "review_file": null,
+    "frozen": false,
+    "created_at": "2026-07-08"
+  }
+]

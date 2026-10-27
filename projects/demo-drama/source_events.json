@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "event_ch01_001",
+    "source": "demo_outline",
+    "chapter": "ch01",
+    "summary": "Demo Heroine wakes inside a cold abandoned palace chamber during a rainy night and realizes she is no longer in her own era.",
+    "characters": ["char_heroine"],
+    "location": "cold palace chamber",
+    "must_keep": true,
+    "dramatic_function": "opening hook and displacement",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s001"],
+    "frozen_version": "source_events_v002",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  },
+  {
+    "event_id": "event_ch01_002",
+    "source": "demo_outline",
+    "chapter": "ch01",
+    "summary": "Footsteps approach outside the broken door, forcing Demo Heroine to hide before she understands the danger.",
+    "characters": ["char_heroine"],
+    "location": "cold palace chamber",
+    "must_keep": true,
+    "dramatic_function": "external threat",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s002"],
+    "frozen_version": "source_events_v002",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  },
+  {
+    "event_id": "event_ch01_003",
+    "source": "demo_outline",
+    "chapter": "ch01",
+    "summary": "Demo Heroine hides behind a torn bed curtain, grips a silver hairpin, and watches the door through a narrow gap.",
+    "characters": ["char_heroine"],
+    "location": "cold palace chamber",
+    "must_keep": true,
+    "dramatic_function": "survival choice",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s003"],
+    "frozen_version": "source_events_v002",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  },
+  {
+    "event_id": "event_ch01_004",
+    "source": "demo_outline",
+    "chapter": "ch01",
+    "summary": "A tall shadow stops outside the door; Demo Heroine sees a palace token on the floor and understands someone has deliberately trapped her.",
+    "characters": ["char_heroine"],
+    "location": "cold palace chamber",
+    "must_keep": true,
+    "dramatic_function": "cliffhanger clue",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s004"],
+    "frozen_version": "source_events_v002",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  }
+]

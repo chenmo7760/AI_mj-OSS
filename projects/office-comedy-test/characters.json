@@ -1,0 +1,93 @@
+[
+  {
+    "character_id": "char_demo_worker",
+    "name": "Demo Worker",
+    "role": "office_employee",
+    "age": 27,
+    "appearance": "short black hair, round glasses, slim build, expressive anxious face",
+    "visual_hint": "short black hair, round glasses, white shirt, loosened blue tie, office ID badge",
+    "style_profile_ids": [
+      "style_live_action_light_realism_v001",
+      "style_motion_comic_v001"
+    ],
+    "default_style_profile_id": "style_live_action_light_realism_v001",
+    "body_type": "slim young office worker",
+    "height_cm": 174,
+    "performance_style": "nervous office-comedy physical acting; quick eye shifts, tense shoulders, awkward freezes, and good-natured panic.",
+    "active_costume_id": "costume_demo_worker_v001",
+    "costume_sets": [
+      {
+        "costume_id": "costume_demo_worker_v001",
+        "name": "modern office outfit",
+        "description": "white office shirt, loosened blue tie, dark trousers, ID badge, sleeves slightly rolled",
+        "negative_rules": [
+          "no hoodie",
+          "no luxury suit",
+          "do not remove glasses",
+          "do not remove blue tie"
+        ],
+        "reference_assets": [],
+        "locked": false
+      }
+    ],
+    "personality": "earnest, nervous, tries too hard, physically awkward in funny situations",
+    "negative_rules": [
+      "no beard",
+      "no hoodie",
+      "no luxury suit",
+      "do not remove glasses"
+    ],
+    "reference_assets": [],
+    "locked_asset_ids": [],
+    "voice": {
+      "style": "fast, nervous, good-natured"
+    },
+    "frozen_version": "characters_v001",
+    "review_file": null
+  },
+  {
+    "character_id": "char_demo_manager",
+    "name": "Demo Manager",
+    "role": "department_manager",
+    "age": 45,
+    "appearance": "neat side-part black hair, square face, serious eyebrows, average build",
+    "visual_hint": "middle-aged manager, navy suit, red lanyard, serious face, neat side-part hair",
+    "style_profile_ids": [
+      "style_live_action_light_realism_v001",
+      "style_motion_comic_v001"
+    ],
+    "default_style_profile_id": "style_live_action_light_realism_v001",
+    "body_type": "average-build middle-aged manager",
+    "height_cm": 176,
+    "performance_style": "deadpan comedy acting; minimal facial movement, precise posture, slow surprised blinks, and restrained authority.",
+    "active_costume_id": "costume_demo_manager_v001",
+    "costume_sets": [
+      {
+        "costume_id": "costume_demo_manager_v001",
+        "name": "manager business suit",
+        "description": "navy business suit, white shirt, red lanyard, black leather shoes",
+        "negative_rules": [
+          "no smiling villain look",
+          "no celebrity likeness",
+          "do not change lanyard color",
+          "do not make suit black"
+        ],
+        "reference_assets": [],
+        "locked": false
+      }
+    ],
+    "personality": "stern, precise, unintentionally funny when surprised",
+    "negative_rules": [
+      "no smiling villain look",
+      "no celebrity likeness",
+      "do not change lanyard color"
+    ],
+    "reference_assets": [],
+    "locked_asset_ids": [],
+    "voice": {
+      "style": "low, serious, deadpan"
+    },
+    "frozen_version": "characters_v001",
+    "review_file": null
+  }
+]

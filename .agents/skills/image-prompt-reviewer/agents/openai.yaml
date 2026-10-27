@@ -1,0 +1,4 @@
+interface:
+  display_name: "image-prompt-reviewer"
+  short_description: "Lightweight AI manga production role"
+  default_prompt: "Use this role for the AI manga production pipeline."

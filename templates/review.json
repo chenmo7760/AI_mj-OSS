@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "review_id": "example_review_v001",
+  "target_type": "storyboard | character | prompt | asset | voice | export | quality",
+  "target_id": null,
+  "target_file": null,
+  "stage": null,
+  "reviewer": "reviewer-skill-name",
+  "result": "Pass",
+  "blocking_findings": [],
+  "required_fixes": [],
+  "accepted_risks": [],
+  "evidence": [],
+  "stale": false,
+  "next_role": null,
+  "created_at": "YYYY-MM-DD"
+}

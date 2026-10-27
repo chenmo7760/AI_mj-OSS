@@ -1,0 +1,6 @@
+- Check valid shot ID, prompt type, template ref/version, slot overrides, style guide, characters, scene, props, composition, and negative rules.
+- Check that the prompt uses the active `style_profile_id` from `project.json` or shot override.
+- Do not treat photorealism as a failure when the active style is `style_live_action_light_realism_v001`; do treat it as style drift when the active style is `style_motion_comic_v001` unless a shot override is approved.
+- Do not treat comic/illustrated rendering as a failure when the active style is `style_motion_comic_v001`; do treat it as style drift when the active style is `style_live_action_light_realism_v001` unless a shot override is approved.
+- Scene-only prompts must not include people or action.
+- Grid prompts must declare exact rows, columns, and cell mapping.

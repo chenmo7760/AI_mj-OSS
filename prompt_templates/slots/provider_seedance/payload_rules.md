@@ -1,0 +1,2 @@
+- Use final video prompt and provider params from task metadata.
+- Keep prompt short enough for provider UI/API and avoid unsupported negatives.

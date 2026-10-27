@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Template Registry",
+  "type": "object",
+  "required": ["schema_version", "templates"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "default_language": { "type": "string" },
+    "templates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["prompt_key", "prompt_type", "version", "slots"],
+        "properties": {
+          "prompt_key": { "type": "string" },
+          "prompt_type": { "type": "string" },
+          "version": { "type": "integer" },
+          "description": { "type": "string" },
+          "slots": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["slot_key", "file", "required"],
+              "properties": {
+                "slot_key": { "type": "string" },
+                "file": { "type": "string" },
+                "required": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

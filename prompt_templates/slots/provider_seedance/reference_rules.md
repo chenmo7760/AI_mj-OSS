@@ -1,0 +1,2 @@
+- Use explicit media roles: `first_frame`, `last_frame`, `reference_image`, `reference_video`, or `reference_audio`.
+- Preserve ordering and source asset IDs.

@@ -1,0 +1,3 @@
+- Use concise image prompt text plus negative prompt.
+- Keep text/watermark/logo negatives explicit.
+- Mark whether prompt extension is allowed.

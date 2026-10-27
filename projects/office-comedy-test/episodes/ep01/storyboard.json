@@ -1,0 +1,317 @@
+[
+  {
+    "shot_id": "ep01_s001",
+    "episode": "ep01",
+    "order": 1,
+    "title": "Late But Confident",
+    "duration_sec": 4,
+    "location": "modern open office",
+    "time": "weekday morning",
+    "atmosphere": "bright, tense, awkwardly formal",
+    "scene": "A bright modern open office with glass meeting room, desks, monitors, coffee cups, sticky notes, and a serious meeting already waiting.",
+    "scene_title": "Morning Meeting Area",
+    "scene_description": "Demo Worker rushes in with coffee and realizes the meeting has already started.",
+    "lighting": "soft daylight mixed with clean office ceiling lights",
+    "color_palette": "white, office blue, sticky-note yellow, coffee brown",
+    "characters": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "character_ids": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "action": "Demo Worker freezes mid-step with coffee in hand while Demo Manager looks at him from the meeting table.",
+    "result": "The serious meeting energy makes Demo Worker's lateness visually funny.",
+    "dialogue": "I am only... three minutes professionally late.",
+    "dialogues": [
+      {
+        "sequence": 1,
+        "character_id": "char_demo_worker",
+        "speaker": "Demo Worker",
+        "text": "I am only... three minutes professionally late.",
+        "emotion": "nervous whisper",
+        "start_ratio": 0.45,
+        "end_ratio": 0.85
+      }
+    ],
+    "narration": "Demo Worker enters like he still has a chance.",
+    "camera": "vertical 9:16 medium wide office comedy frame",
+    "shot_type": "medium wide",
+    "angle": "slightly low angle from office doorway",
+    "movement": "static image prompt only",
+    "camera_direction": "Frame Demo Worker foreground left, meeting table and Demo Manager background right.",
+    "composition_guide": "Use diagonal tension between late employee and serious manager; leave bottom third clean.",
+    "focal_point": "Demo Worker's frozen expression and coffee cup",
+    "depth_of_field": "moderate depth, readable office background",
+    "motion_script": "Static image: Demo Worker frozen mid-step; Demo Manager staring from meeting table.",
+    "video_script": "Not used in image-stage test.",
+    "image_prompt": "Vertical 9:16 cinematic live-action light realism office comedy frame, Demo Worker frozen mid-step with coffee, Demo Manager serious at meeting table.",
+    "video_prompt": null,
+    "bgm_prompt": null,
+    "sound_effect": null,
+    "sound_design": null,
+    "music_cue": null,
+    "transition_in": null,
+    "transition_out": null,
+    "reference_image_prompts": [
+      "Modern Chinese open office, glass meeting room, desks, monitors, sticky notes, coffee cups, bright daylight, no people, no text",
+      "Demo Worker office comedy character, short black hair, round glasses, white shirt, loosened blue tie, anxious expression"
+    ],
+    "reference_images": [],
+    "costume_overrides": {
+      "char_demo_worker": "costume_demo_worker_v001",
+      "char_demo_manager": "costume_demo_manager_v001"
+    },
+    "source_events": [
+      "event_office_001"
+    ],
+    "scene_asset_ids": [],
+    "prop_asset_ids": [],
+    "previous_shot_summary": null,
+    "next_shot_intent": "Robot vacuum causes sticky-note disaster.",
+    "continuity_from": null,
+    "continuity_to": "ep01_s002",
+    "keyframes": {
+      "start_frame": null,
+      "end_frame": null,
+      "start_frame_prompt": "Demo Worker enters modern office holding coffee, Demo Manager watches from meeting table.",
+      "end_frame_prompt": null
+    },
+    "prompt_files": {
+      "image": "episodes/ep01/prompts/ep01_s001_image_v001.md"
+    },
+    "prompt_versions": {
+      "image": 1
+    },
+    "assets": {
+      "image": null,
+      "video": null,
+      "voice": null
+    },
+    "quality_gate": {
+      "status": "pending",
+      "review_file": null
+    },
+    "route_plan": {
+      "route": "text-only",
+      "reference_mode": "text_only",
+      "provider_id": "codex_imagegen_subagent",
+      "rationale": "Image-stage still frame test; no video route needed yet."
+    },
+    "stale": false,
+    "stale_reason": null,
+    "frozen_version": "storyboard_v001",
+    "status": "planned"
+  },
+  {
+    "shot_id": "ep01_s002",
+    "episode": "ep01",
+    "order": 2,
+    "title": "Robot Vacuum Ambush",
+    "duration_sec": 4,
+    "location": "meeting area inside modern office",
+    "time": "weekday morning",
+    "atmosphere": "sudden, chaotic, harmlessly absurd",
+    "scene": "Meeting area with chairs, a low table, coffee cup, sticky-note-covered report pages, and a small robot vacuum near Demo Worker's chair.",
+    "scene_title": "Tiny Disaster",
+    "scene_description": "The robot vacuum bumps Demo Worker's chair while the manager asks for the report.",
+    "lighting": "bright clean office light",
+    "color_palette": "white, blue, yellow sticky notes, warm coffee brown",
+    "characters": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "character_ids": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "action": "A small robot vacuum bumps Demo Worker's chair; sticky notes and report pages burst upward while Demo Worker panics.",
+    "result": "The meeting turns chaotic but nobody has moved enough to admit it is funny.",
+    "dialogue": "Explain this report.",
+    "dialogues": [
+      {
+        "sequence": 1,
+        "character_id": "char_demo_manager",
+        "speaker": "Demo Manager",
+        "text": "Explain this report.",
+        "emotion": "deadpan serious",
+        "start_ratio": 0.2,
+        "end_ratio": 0.55
+      }
+    ],
+    "narration": "The smallest office machine chooses violence.",
+    "camera": "vertical 9:16 dynamic medium shot",
+    "shot_type": "medium shot",
+    "angle": "slightly high angle looking down at chair and robot vacuum",
+    "movement": "static image prompt only",
+    "camera_direction": "Frame robot vacuum lower right, Demo Worker center, flying sticky notes across the frame.",
+    "composition_guide": "Sticky notes should create comic motion arcs; keep character faces readable.",
+    "focal_point": "Demo Worker's panic and the tiny robot vacuum",
+    "depth_of_field": "sharp foreground props and faces",
+    "motion_script": "Static image: robot vacuum hits chair, sticky notes airborne, coffee nearly spilling.",
+    "video_script": "Not used in image-stage test.",
+    "image_prompt": "Vertical 9:16 bright office comedy frame, small robot vacuum bumping chair, sticky notes flying, Demo Worker panicking, Demo Manager deadpan.",
+    "video_prompt": null,
+    "bgm_prompt": null,
+    "sound_effect": null,
+    "sound_design": null,
+    "music_cue": null,
+    "transition_in": null,
+    "transition_out": null,
+    "reference_image_prompts": [
+      "Small office robot vacuum beside meeting chair, modern office floor, no logos, no text",
+      "Sticky-note-covered weekly report pages flying in office comedy scene, no readable text"
+    ],
+    "reference_images": [],
+    "costume_overrides": {
+      "char_demo_worker": "costume_demo_worker_v001",
+      "char_demo_manager": "costume_demo_manager_v001"
+    },
+    "source_events": [
+      "event_office_002"
+    ],
+    "scene_asset_ids": [],
+    "prop_asset_ids": [],
+    "previous_shot_summary": "Demo Worker entered late and froze under Demo Manager's stare.",
+    "next_shot_intent": "Sticky note lands on Demo Manager's face.",
+    "continuity_from": "ep01_s001",
+    "continuity_to": "ep01_s003",
+    "keyframes": {
+      "start_frame": null,
+      "end_frame": null,
+      "start_frame_prompt": "Robot vacuum just reaches Demo Worker's chair; weekly report covered in sticky notes on table.",
+      "end_frame_prompt": null
+    },
+    "prompt_files": {
+      "image": "episodes/ep01/prompts/ep01_s002_image_v001.md"
+    },
+    "prompt_versions": {
+      "image": 1
+    },
+    "assets": {
+      "image": null,
+      "video": null,
+      "voice": null
+    },
+    "quality_gate": {
+      "status": "pending",
+      "review_file": null
+    },
+    "route_plan": {
+      "route": "text-only",
+      "reference_mode": "text_only",
+      "provider_id": "codex_imagegen_subagent",
+      "rationale": "Image-stage still frame test; no video route needed yet."
+    },
+    "stale": false,
+    "stale_reason": null,
+    "frozen_version": "storyboard_v001",
+    "status": "planned"
+  },
+  {
+    "shot_id": "ep01_s003",
+    "episode": "ep01",
+    "order": 3,
+    "title": "Report Reaches Leadership",
+    "duration_sec": 5,
+    "location": "meeting area inside modern office",
+    "time": "weekday morning",
+    "atmosphere": "silent punchline, absurd, awkward",
+    "scene": "The meeting area after the sticky-note explosion, with Demo Manager deadpan and one blank yellow sticky note stuck to his face.",
+    "scene_title": "The Punchline",
+    "scene_description": "Demo Manager remains serious with a sticky note on his face while Demo Worker freezes with coffee.",
+    "lighting": "bright office daylight and ceiling lights",
+    "color_palette": "office white, navy suit, red lanyard, sticky-note yellow, blue tie",
+    "characters": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "character_ids": [
+      "char_demo_worker",
+      "char_demo_manager"
+    ],
+    "action": "A blank sticky note lands on Demo Manager's face; Demo Worker freezes with coffee while trying not to panic.",
+    "result": "The image delivers the silent visual punchline.",
+    "dialogue": "The report has... reached leadership.",
+    "dialogues": [
+      {
+        "sequence": 1,
+        "character_id": "char_demo_worker",
+        "speaker": "Demo Worker",
+        "text": "The report has... reached leadership.",
+        "emotion": "terrified whisper",
+        "start_ratio": 0.55,
+        "end_ratio": 0.9
+      }
+    ],
+    "narration": "For one long second, the office becomes a museum of bad decisions.",
+    "camera": "vertical 9:16 medium close-up office comedy punchline",
+    "shot_type": "medium close-up",
+    "angle": "eye level",
+    "movement": "static image prompt only",
+    "camera_direction": "Demo Manager foreground right with sticky note on face; Demo Worker background left frozen with coffee.",
+    "composition_guide": "Make sticky note clearly visible but blank; show Demo Worker's anxious face and coffee cup; no text.",
+    "focal_point": "blank yellow sticky note on Demo Manager's serious face",
+    "depth_of_field": "Demo Manager sharp, Demo Worker slightly behind but readable",
+    "motion_script": "Static image: silent punchline moment after sticky-note explosion.",
+    "video_script": "Not used in image-stage test.",
+    "image_prompt": "Vertical 9:16 cinematic live-action light realism office comedy punchline, Demo Manager serious with blank yellow sticky note stuck to his face, Demo Worker frozen with coffee in background, modern office meeting area.",
+    "video_prompt": null,
+    "bgm_prompt": null,
+    "sound_effect": null,
+    "sound_design": null,
+    "music_cue": null,
+    "transition_in": null,
+    "transition_out": null,
+    "reference_image_prompts": [
+      "Demo Manager character, middle-aged office manager, navy suit, red lanyard, serious deadpan face",
+      "Demo Worker character, short black hair, round glasses, white shirt, loosened blue tie, anxious expression"
+    ],
+    "reference_images": [],
+    "costume_overrides": {
+      "char_demo_worker": "costume_demo_worker_v001",
+      "char_demo_manager": "costume_demo_manager_v001"
+    },
+    "source_events": [
+      "event_office_003"
+    ],
+    "scene_asset_ids": [],
+    "prop_asset_ids": [],
+    "previous_shot_summary": "Robot vacuum bumped Demo Worker's chair and launched sticky notes into the air.",
+    "next_shot_intent": "Stop here for image-stage test.",
+    "continuity_from": "ep01_s002",
+    "continuity_to": null,
+    "keyframes": {
+      "start_frame": null,
+      "end_frame": null,
+      "start_frame_prompt": "Demo Manager with blank sticky note on face, Demo Worker frozen behind him with coffee.",
+      "end_frame_prompt": null
+    },
+    "prompt_files": {
+      "image": "episodes/ep01/prompts/ep01_s003_image_v001.md"
+    },
+    "prompt_versions": {
+      "image": 1
+    },
+    "assets": {
+      "image": null,
+      "video": null,
+      "voice": null
+    },
+    "quality_gate": {
+      "status": "pending",
+      "review_file": null
+    },
+    "route_plan": {
+      "route": "text-only",
+      "reference_mode": "text_only",
+      "provider_id": "codex_imagegen_subagent",
+      "rationale": "Image-stage still frame test; no video route needed yet."
+    },
+    "stale": false,
+    "stale_reason": null,
+    "frozen_version": "storyboard_v001",
+    "status": "planned"
+  }
+]

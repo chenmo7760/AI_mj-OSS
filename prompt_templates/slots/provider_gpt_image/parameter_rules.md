@@ -1,0 +1,2 @@
+- Prefer vertical 9:16 sizes for short drama.
+- Preserve prompt provenance: shot_id, prompt_file, prompt_id, and provider_target.

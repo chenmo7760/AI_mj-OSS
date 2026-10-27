@@ -1,0 +1,3 @@
+- Use the assembled image prompt as the main prompt.
+- Include style, composition, character identity, negative rules, and output size/aspect.
+- If reference images exist, list them as ordered references with purpose.

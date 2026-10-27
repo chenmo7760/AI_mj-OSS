@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1.0",
+  "providers": [
+    {
+      "provider_id": "codex_imagegen_subagent",
+      "display_name": "Codex Imagegen Subagent",
+      "async": false,
+      "execution_mode": "codex_subagent",
+      "human_required": false,
+      "subagent": {
+        "agent_type": "worker",
+        "model": "configure_supported_model",
+        "reasoning_effort": "xhigh",
+        "skill": "codex-imagegen-executor"
+      },
+      "supported_media": ["image"],
+      "video_modes": [],
+      "image_modes": ["text-only", "reference-image", "nine-grid"],
+      "max_reference_images": 4,
+      "supports_first_frame": false,
+      "supports_last_frame": false,
+      "supports_seed": false,
+      "supports_negative_prompt": true,
+      "supports_prompt_extend": false,
+      "supports_watermark_toggle": false,
+      "payload_templates": {
+        "image_generation": "shot_image",
+        "video_generation": null
+      },
+      "duration_sec": { "min": 0, "max": 0, "default": 0 },
+      "aspect_ratios": ["9:16", "16:9", "1:1"],
+      "resolutions": ["provider_default"],
+      "notes": "Configure a supported model and reasoning effort before dispatching an image-generation worker. The placeholder model is not callable. Register generated asset metadata; this is not a manual web provider."
+    },
+    {
+      "provider_id": "gemini_video_web_manual",
+      "display_name": "Gemini Video Web Manual",
+      "async": true,
+      "supported_media": ["video"],
+      "video_modes": ["text-only", "reference-image", "first-frame", "first-last"],
+      "image_modes": [],
+      "max_reference_images": 3,
+      "supports_first_frame": true,
+      "supports_last_frame": true,
+      "supports_seed": false,
+      "supports_negative_prompt": false,
+      "supports_prompt_extend": false,
+      "supports_watermark_toggle": false,
+      "payload_templates": {
+        "image_generation": null,
+        "video_generation": "provider_veo"
+      },
+      "duration_sec": { "min": 4, "max": 8, "default": 5 },
+      "aspect_ratios": ["9:16", "16:9"],
+      "resolutions": ["provider_default"],
+      "notes": "Use when Codex prepares prompts, frames, and cautions, while a human runs Gemini/Veo in the web UI and registers the downloaded video."
+    },
+    {
+      "provider_id": "manual_web",
+      "display_name": "Manual Web Provider",
+      "async": false,
+      "supported_media": ["image", "video"],
+      "video_modes": ["text-only", "reference-image", "first-frame", "first-last", "nine-grid"],
+      "image_modes": ["text-only", "reference-image", "nine-grid"],
+      "max_reference_images": 8,
+      "supports_first_frame": true,
+      "supports_last_frame": true,
+      "supports_seed": false,
+      "supports_negative_prompt": true,
+      "supports_prompt_extend": false,
+      "supports_watermark_toggle": false,
+      "payload_templates": {
+        "image_generation": "provider_gpt_image",
+        "video_generation": null
+      },
+      "duration_sec": { "min": 3, "max": 10, "default": 5 },
+      "aspect_ratios": ["9:16", "16:9", "1:1"],
+      "resolutions": ["provider_default"],
+      "notes": "Use when generation happens in a browser or external UI and metadata is registered manually."
+    },
+    {
+      "provider_id": "gemini_omni_or_veo",
+      "display_name": "Gemini Omni / Veo placeholder",
+      "async": true,
+      "supported_media": ["video"],
+      "video_modes": ["text-only", "reference-image", "first-frame", "first-last"],
+      "image_modes": [],
+      "max_reference_images": 3,
+      "supports_first_frame": true,
+      "supports_last_frame": true,
+      "supports_seed": false,
+      "supports_negative_prompt": false,
+      "supports_prompt_extend": false,
+      "supports_watermark_toggle": false,
+      "payload_templates": {
+        "image_generation": null,
+        "video_generation": "provider_veo"
+      },
+      "duration_sec": { "min": 4, "max": 8, "default": 5 },
+      "aspect_ratios": ["9:16", "16:9"],
+      "resolutions": ["provider_default"],
+      "notes": "Placeholder profile until a concrete model/API is selected."
+    },
+    {
+      "provider_id": "seedance_like",
+      "display_name": "Seedance-like video provider",
+      "async": true,
+      "supported_media": ["video"],
+      "video_modes": ["text-only", "reference-image", "first-frame", "first-last"],
+      "image_modes": [],
+      "max_reference_images": 8,
+      "supports_first_frame": true,
+      "supports_last_frame": true,
+      "supports_seed": true,
+      "supports_negative_prompt": true,
+      "supports_prompt_extend": true,
+      "supports_watermark_toggle": true,
+      "payload_templates": {
+        "image_generation": null,
+        "video_generation": "provider_seedance"
+      },
+      "duration_sec": { "min": 3, "max": 10, "default": 5 },
+      "aspect_ratios": ["9:16", "16:9", "1:1"],
+      "resolutions": ["720p", "1080p", "provider_default"],
+      "notes": "Generic profile for providers with task submit/poll and first/last frame roles."
+    }
+  ]
+}

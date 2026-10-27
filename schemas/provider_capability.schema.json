@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provider Capabilities",
+  "type": "object",
+  "required": ["schema_version", "providers"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "providers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["provider_id", "display_name", "supported_media", "video_modes", "max_reference_images"],
+        "properties": {
+          "provider_id": { "type": "string" },
+          "display_name": { "type": "string" },
+          "async": { "type": "boolean" },
+          "execution_mode": { "type": "string" },
+          "human_required": { "type": "boolean" },
+          "subagent": { "type": "object" },
+          "supported_media": { "type": "array", "items": { "type": "string" } },
+          "video_modes": { "type": "array", "items": { "type": "string" } },
+          "image_modes": { "type": "array", "items": { "type": "string" } },
+          "max_reference_images": { "type": "integer" },
+          "supports_first_frame": { "type": "boolean" },
+          "supports_last_frame": { "type": "boolean" },
+          "supports_seed": { "type": "boolean" },
+          "supports_negative_prompt": { "type": "boolean" },
+          "supports_prompt_extend": { "type": "boolean" },
+          "supports_watermark_toggle": { "type": "boolean" },
+          "duration_sec": { "type": "object" },
+          "aspect_ratios": { "type": "array", "items": { "type": "string" } },
+          "resolutions": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "schema_version": "0.1.0",
+  "default_language": "mixed_zh_en",
+  "templates": [
+    {
+      "prompt_key": "script_generate",
+      "prompt_type": "text_to_markdown",
+      "version": 1,
+      "description": "Generate an episode script from source events, style guide, and character facts.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/script_generate/role_definition.md", "required": true },
+        { "slot_key": "source_rules", "file": "slots/script_generate/source_rules.md", "required": true },
+        { "slot_key": "pacing_rules", "file": "slots/script_generate/pacing_rules.md", "required": true },
+        { "slot_key": "dialogue_rules", "file": "slots/script_generate/dialogue_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/script_generate/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "script_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review episode script against source events, pacing, character consistency, and readiness.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/script_review/role_definition.md", "required": true },
+        { "slot_key": "coverage_rules", "file": "slots/script_review/coverage_rules.md", "required": true },
+        { "slot_key": "quality_rules", "file": "slots/script_review/quality_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/script_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "storyboard_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review storyboard structure, source coverage, continuity, shot clarity, and image/video readiness.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/storyboard_review/role_definition.md", "required": true },
+        { "slot_key": "structure_rules", "file": "slots/storyboard_review/structure_rules.md", "required": true },
+        { "slot_key": "continuity_rules", "file": "slots/storyboard_review/continuity_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/storyboard_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review character cards, visual anchors, costumes, references, voices, and negative rules.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_review/role_definition.md", "required": true },
+        { "slot_key": "identity_rules", "file": "slots/character_review/identity_rules.md", "required": true },
+        { "slot_key": "reference_rules", "file": "slots/character_review/reference_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "image_prompt_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review image prompts before generation for shot grounding, style, character consistency, and negatives.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/image_prompt_review/role_definition.md", "required": true },
+        { "slot_key": "prompt_rules", "file": "slots/image_prompt_review/prompt_rules.md", "required": true },
+        { "slot_key": "risk_rules", "file": "slots/image_prompt_review/risk_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/image_prompt_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "video_prompt_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review video prompts before generation for route, provider capability, keyframes, motion, and continuity.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/video_prompt_review/role_definition.md", "required": true },
+        { "slot_key": "route_rules", "file": "slots/video_prompt_review/route_rules.md", "required": true },
+        { "slot_key": "continuity_rules", "file": "slots/video_prompt_review/continuity_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/video_prompt_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "asset_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review generated asset candidates, metadata, selection rationale, and downstream readiness.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/asset_review/role_definition.md", "required": true },
+        { "slot_key": "metadata_rules", "file": "slots/asset_review/metadata_rules.md", "required": true },
+        { "slot_key": "candidate_rules", "file": "slots/asset_review/candidate_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/asset_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "voice_script",
+      "prompt_type": "text_to_json",
+      "version": 1,
+      "description": "Create voice and subtitle production scripts from storyboard dialogue and narration.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/voice_script/role_definition.md", "required": true },
+        { "slot_key": "timing_rules", "file": "slots/voice_script/timing_rules.md", "required": true },
+        { "slot_key": "speaker_rules", "file": "slots/voice_script/speaker_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/voice_script/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "voice_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Review voice scripts, timing, speaker assignment, subtitles, and emotion notes.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/voice_review/role_definition.md", "required": true },
+        { "slot_key": "timing_rules", "file": "slots/voice_review/timing_rules.md", "required": true },
+        { "slot_key": "quality_rules", "file": "slots/voice_review/quality_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/voice_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "quality_review",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Run cross-stage quality review across story, prompts, assets, continuity, audio, subtitles, and export readiness.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/quality_review/role_definition.md", "required": true },
+        { "slot_key": "cross_stage_rules", "file": "slots/quality_review/cross_stage_rules.md", "required": true },
+        { "slot_key": "rerun_rules", "file": "slots/quality_review/rerun_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/quality_review/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "style_motion_comic_v001",
+      "prompt_type": "style_profile",
+      "version": 1,
+      "description": "Reusable style profile instructions for colorful motion-comic vertical AI drama.",
+      "slots": [
+        { "slot_key": "style_profile", "file": "slots/style_profiles/motion_comic_v001.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "style_live_action_light_realism_v001",
+      "prompt_type": "style_profile",
+      "version": 1,
+      "description": "Reusable style profile instructions for cinematic live-action light realism vertical AI drama.",
+      "slots": [
+        { "slot_key": "style_profile", "file": "slots/style_profiles/live_action_light_realism_v001.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "provider_gpt_image",
+      "prompt_type": "provider_payload",
+      "version": 1,
+      "description": "Transform a shot image prompt into a GPT Image style provider payload.",
+      "slots": [
+        { "slot_key": "payload_rules", "file": "slots/provider_gpt_image/payload_rules.md", "required": true },
+        { "slot_key": "parameter_rules", "file": "slots/provider_gpt_image/parameter_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/provider_gpt_image/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "provider_qwen_image",
+      "prompt_type": "provider_payload",
+      "version": 1,
+      "description": "Transform a shot image prompt into a Qwen Image style provider payload.",
+      "slots": [
+        { "slot_key": "payload_rules", "file": "slots/provider_qwen_image/payload_rules.md", "required": true },
+        { "slot_key": "parameter_rules", "file": "slots/provider_qwen_image/parameter_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/provider_qwen_image/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "provider_veo",
+      "prompt_type": "provider_payload",
+      "version": 1,
+      "description": "Transform a video prompt and frame references into a Veo/Gemini style provider payload.",
+      "slots": [
+        { "slot_key": "payload_rules", "file": "slots/provider_veo/payload_rules.md", "required": true },
+        { "slot_key": "reference_rules", "file": "slots/provider_veo/reference_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/provider_veo/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "provider_seedance",
+      "prompt_type": "provider_payload",
+      "version": 1,
+      "description": "Transform a video prompt and first/last/reference images into a Seedance-like provider payload.",
+      "slots": [
+        { "slot_key": "payload_rules", "file": "slots/provider_seedance/payload_rules.md", "required": true },
+        { "slot_key": "reference_rules", "file": "slots/provider_seedance/reference_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/provider_seedance/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_extract",
+      "prompt_type": "text_to_json",
+      "version": 1,
+      "description": "Extract reusable character, scene, prop, costume, and voice facts from an approved script.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_extract/role_definition.md", "required": true },
+        { "slot_key": "source_rules", "file": "slots/character_extract/source_rules.md", "required": true },
+        { "slot_key": "field_rules", "file": "slots/character_extract/field_rules.md", "required": true },
+        { "slot_key": "dedupe_rules", "file": "slots/character_extract/dedupe_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_extract/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "shot_split",
+      "prompt_type": "text_to_json",
+      "version": 1,
+      "description": "Split approved script into production storyboard shots with motion_script, video_script, dialogues, references, and continuity.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/shot_split/role_definition.md", "required": true },
+        { "slot_key": "shot_rules", "file": "slots/shot_split/shot_rules.md", "required": true },
+        { "slot_key": "motion_rules", "file": "slots/shot_split/motion_rules.md", "required": true },
+        { "slot_key": "continuity_rules", "file": "slots/shot_split/continuity_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/shot_split/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "keyframe_prompts",
+      "prompt_type": "text_to_json",
+      "version": 1,
+      "description": "Create start/end keyframe prompts for high-control video generation.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/keyframe_prompts/role_definition.md", "required": true },
+        { "slot_key": "frame_rules", "file": "slots/keyframe_prompts/frame_rules.md", "required": true },
+        { "slot_key": "continuity_rules", "file": "slots/keyframe_prompts/continuity_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/keyframe_prompts/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "ref_image_prompts",
+      "prompt_type": "text_to_json",
+      "version": 1,
+      "description": "Generate pure scene/prop/reference image prompts for reusable shot references.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/ref_image_prompts/role_definition.md", "required": true },
+        { "slot_key": "scene_rules", "file": "slots/ref_image_prompts/scene_rules.md", "required": true },
+        { "slot_key": "prop_rules", "file": "slots/ref_image_prompts/prop_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/ref_image_prompts/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_reference",
+      "prompt_type": "image",
+      "version": 1,
+      "description": "Create neutral character reference sheet prompts with stable identity and costume anchors.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_reference/role_definition.md", "required": true },
+        { "slot_key": "identity_rules", "file": "slots/character_reference/identity_rules.md", "required": true },
+        { "slot_key": "sheet_rules", "file": "slots/character_reference/sheet_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_reference/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_reference_v002",
+      "prompt_type": "image",
+      "version": 2,
+      "description": "Create production-grade character reference sheet prompts with required views, expression strip, costume anchors, and lock requirements.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_reference_v002/role_definition.md", "required": true },
+        { "slot_key": "identity_rules", "file": "slots/character_reference_v002/identity_rules.md", "required": true },
+        { "slot_key": "sheet_rules", "file": "slots/character_reference_v002/sheet_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_reference_v002/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_candidate_compare",
+      "prompt_type": "review",
+      "version": 1,
+      "description": "Compare character reference candidates and decide whether one can be locked for downstream production.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_candidate_compare/role_definition.md", "required": true },
+        { "slot_key": "comparison_rules", "file": "slots/character_candidate_compare/comparison_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_candidate_compare/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "character_failure_diagnosis",
+      "prompt_type": "diagnosis",
+      "version": 1,
+      "description": "Diagnose failed character reference generations and identify the earliest fixable upstream artifact.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/character_failure_diagnosis/role_definition.md", "required": true },
+        { "slot_key": "diagnosis_rules", "file": "slots/character_failure_diagnosis/diagnosis_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/character_failure_diagnosis/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "shot_rerun_diagnosis",
+      "prompt_type": "diagnosis",
+      "version": 1,
+      "description": "Diagnose failed shot image or video generations and create a focused rerun plan.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/shot_rerun_diagnosis/role_definition.md", "required": true },
+        { "slot_key": "diagnosis_rules", "file": "slots/shot_rerun_diagnosis/diagnosis_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/shot_rerun_diagnosis/output_format.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "costume_expression_pack",
+      "prompt_type": "image",
+      "version": 1,
+      "description": "Create prompts for locked-identity costume and expression support assets.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/costume_expression_pack/role_definition.md", "required": true },
+        { "slot_key": "pack_rules", "file": "slots/costume_expression_pack/pack_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/costume_expression_pack/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "grid_prompt",
+      "prompt_type": "image",
+      "version": 1,
+      "description": "Create rows x cols grid prompts with cell-level first_frame, last_frame, or reference assignments.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/grid_prompt/role_definition.md", "required": true },
+        { "slot_key": "layout_rules", "file": "slots/grid_prompt/layout_rules.md", "required": true },
+        { "slot_key": "mode_rules", "file": "slots/grid_prompt/mode_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/grid_prompt/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "shot_image",
+      "prompt_type": "image",
+      "version": 1,
+      "description": "Shot-level image prompt assembled from storyboard, character identity, references, and style slots.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/common/role_definition.md", "required": true },
+        { "slot_key": "source_grounding", "file": "slots/common/source_grounding.md", "required": true },
+        { "slot_key": "visual_style", "file": "slots/common/visual_style.md", "required": true },
+        { "slot_key": "composition_rules", "file": "slots/shot_image/composition_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/shot_image/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "shot_video_first_last",
+      "prompt_type": "video",
+      "version": 1,
+      "description": "Video prompt for first/last keyframe interpolation or first-last capable providers.",
+      "slots": [
+        { "slot_key": "role_definition", "file": "slots/common/role_definition.md", "required": true },
+        { "slot_key": "source_grounding", "file": "slots/common/source_grounding.md", "required": true },
+        { "slot_key": "motion_rules", "file": "slots/shot_video_first_last/motion_rules.md", "required": true },
+        { "slot_key": "keyframe_rules", "file": "slots/shot_video_first_last/keyframe_rules.md", "required": true },
+        { "slot_key": "dialogue_rules", "file": "slots/shot_video_first_last/dialogue_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/shot_video_first_last/output_format.md", "required": true },
+        { "slot_key": "negative_rules", "file": "slots/common/negative_rules.md", "required": true }
+      ]
+    },
+    {
+      "prompt_key": "json_repair",
+      "prompt_type": "repair",
+      "version": 1,
+      "description": "Repair malformed model JSON without changing the intended semantic payload.",
+      "slots": [
+        { "slot_key": "repair_role", "file": "slots/json_repair/repair_role.md", "required": true },
+        { "slot_key": "repair_rules", "file": "slots/json_repair/repair_rules.md", "required": true },
+        { "slot_key": "output_format", "file": "slots/json_repair/output_format.md", "required": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+- Use fast vertical-short pacing: clear hook, one beat per scene, and a final turn or question.
+- Keep action readable for later storyboard conversion.
+- Avoid dialogue that cannot be supported by the planned runtime.

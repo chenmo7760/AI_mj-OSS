@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Characters",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["character_id", "name", "role", "appearance", "negative_rules"],
+    "properties": {
+      "character_id": { "type": "string" },
+      "name": { "type": "string" },
+      "role": { "type": "string" },
+      "age": { "type": ["number", "null"] },
+      "visual_hint": { "type": ["string", "null"] },
+      "style_profile_ids": { "type": "array", "items": { "type": "string" } },
+      "default_style_profile_id": { "type": ["string", "null"] },
+      "body_type": { "type": ["string", "null"] },
+      "height_cm": { "type": ["number", "null"] },
+      "appearance": { "type": "string" },
+      "personality": { "type": "string" },
+      "performance_style": { "type": ["string", "null"] },
+      "active_costume_id": { "type": ["string", "null"] },
+      "costume_sets": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["costume_id", "name", "description"],
+          "properties": {
+            "costume_id": { "type": "string" },
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "negative_rules": { "type": "array", "items": { "type": "string" } },
+            "reference_assets": { "type": "array", "items": { "$ref": "#/$defs/reference_asset" } },
+            "locked": { "type": "boolean" }
+          }
+        }
+      },
+      "relationships": { "type": "array", "items": { "type": "object" } },
+      "voice": { "type": "object" },
+      "reference_assets": { "type": "array", "items": { "$ref": "#/$defs/reference_asset" } },
+      "locked_asset_ids": { "type": "array", "items": { "type": "string" } },
+      "negative_rules": { "type": "array", "items": { "type": "string" } },
+      "frozen_version": { "type": ["string", "null"] },
+      "review_file": { "type": ["string", "null"] }
+    }
+  },
+  "$defs": {
+    "reference_asset": {
+      "type": "object",
+      "properties": {
+        "asset_id": { "type": ["string", "null"] },
+        "asset_type": { "type": ["string", "null"] },
+        "path": { "type": ["string", "null"] },
+        "style_profile_id": { "type": ["string", "null"] },
+        "view": { "type": ["string", "null"] },
+        "costume_id": { "type": ["string", "null"] },
+        "candidate_group_id": { "type": ["string", "null"] },
+        "locked": { "type": ["boolean", "null"] },
+        "human_approved": { "type": ["boolean", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}

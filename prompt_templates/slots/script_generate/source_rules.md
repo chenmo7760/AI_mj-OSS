@@ -1,0 +1,3 @@
+- Preserve every `must_keep` source event.
+- Reference event IDs beside each beat.
+- Do not invent facts that contradict `source_events.json`, `characters.json`, or `style_guide.md`.

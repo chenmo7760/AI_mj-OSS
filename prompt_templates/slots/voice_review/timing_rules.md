@@ -1,0 +1,2 @@
+- Check timing fits shot duration and does not overlap incoherently.
+- Check subtitles are readable and not too dense.

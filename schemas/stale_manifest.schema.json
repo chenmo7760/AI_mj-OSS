@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stale Manifest",
+  "type": "object",
+  "required": ["schema_version", "episode_id", "stale_items"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "source_change": { "type": "object" },
+    "stale_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_type", "target_id", "reason"],
+        "properties": {
+          "target_type": { "type": "string" },
+          "target_id": { "type": "string" },
+          "target_file": { "type": ["string", "null"] },
+          "reason": { "type": "string" },
+          "severity": { "type": "string" }
+        }
+      }
+    }
+  }
+}

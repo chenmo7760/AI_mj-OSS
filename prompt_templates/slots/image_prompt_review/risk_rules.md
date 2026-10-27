@@ -1,0 +1,1 @@
+- Flag identity drift, wrong costume, wrong era, unreadable joke/action, photorealistic drift when the active style requires motion-comic, comic/anime drift when the active style requires live-action light realism, text/watermark risk, extra characters, and impossible hands.

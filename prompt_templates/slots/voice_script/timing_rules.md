@@ -1,0 +1,3 @@
+- Use storyboard duration and dialogue ratios when available.
+- Keep subtitle text short enough for vertical video.
+- Mark uncertain timing explicitly.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cost Records",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["task_id", "provider", "estimated_cost", "draft_or_final", "created_at"],
+    "properties": {
+      "task_id": { "type": "string" },
+      "provider": { "type": "string" },
+      "model": { "type": ["string", "null"] },
+      "estimated_cost": { "type": "number" },
+      "actual_cost": { "type": ["number", "null"] },
+      "draft_or_final": { "type": "string" },
+      "created_at": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+- Check each major character has visual hint, appearance, role, personality, active costume, and negative rules.
+- Flag contradictions across cards, world bible, and script.

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Events",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["event_id", "summary", "characters", "location", "must_keep", "dramatic_function", "adapted_episode"],
+    "properties": {
+      "event_id": { "type": "string" },
+      "source": { "type": "string" },
+      "chapter": { "type": "string" },
+      "summary": { "type": "string" },
+      "characters": { "type": "array", "items": { "type": "string" } },
+      "location": { "type": "string" },
+      "must_keep": { "type": "boolean" },
+      "dramatic_function": { "type": "string" },
+      "adapted_episode": { "type": "string" },
+      "adapted_shots": { "type": "array", "items": { "type": "string" } },
+      "frozen_version": { "type": ["string", "null"] },
+      "review_file": { "type": ["string", "null"] }
+    }
+  }
+}

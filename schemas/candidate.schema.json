@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidate Selection",
+  "type": "object",
+  "required": ["candidate_group_id", "shot_id", "candidates"],
+  "properties": {
+    "candidate_group_id": { "type": "string" },
+    "shot_id": { "type": "string" },
+    "candidates": { "type": "array", "items": { "type": "string" } },
+    "selected_asset_id": { "type": ["string", "null"] },
+    "selection_reason": { "type": ["string", "null"] },
+    "review_file": { "type": ["string", "null"] }
+  }
+}

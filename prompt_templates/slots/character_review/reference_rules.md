@@ -1,0 +1,2 @@
+- Check reference assets or reference plans exist for important recurring characters.
+- Flag missing turnaround, costume, face, or prop anchors when the character appears across multiple shots.

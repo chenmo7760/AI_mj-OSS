@@ -1,0 +1,1 @@
+- Check speaker assignment, emotion, voice consistency, narration/dialogue split, and missing audio risks.

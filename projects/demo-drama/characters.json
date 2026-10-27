@@ -1,0 +1,53 @@
+[
+  {
+    "character_id": "char_heroine",
+    "name": "演示角色甲",
+    "role": "female_lead",
+    "age": 22,
+    "visual_hint": "黑发银簪",
+    "style_profile_ids": [
+      "style_motion_comic_v001",
+      "style_live_action_light_realism_v001"
+    ],
+    "default_style_profile_id": "style_motion_comic_v001",
+    "body_type": "slender young woman",
+    "height_cm": 165,
+    "appearance": "瓜子脸，杏眼，长黑发，以银色发簪固定发髻。身形纤细，穿浅青色古装，衣料轻薄但不华丽。整体轮廓清冷、干净、带古代宫廷气质，适合制作全身参考图和三视图。",
+    "personality": "外柔内刚，警觉，善于隐藏情绪，在危险中会先观察再行动。",
+    "performance_style": "紧张时会下意识握紧银簪，先微微后退再抬眼观察；情绪表达克制，眼神变化比大幅动作更明显。",
+    "active_costume_id": "costume_heroine_palace_v001",
+    "costume_sets": [
+      {
+        "costume_id": "costume_heroine_palace_v001",
+        "name": "冷宫浅青古装",
+        "description": "浅青色交领古装，窄袖，银色发簪，素色腰带，无现代饰品。",
+        "negative_rules": [
+          "不要换成现代服装",
+          "不要增加华丽皇冠",
+          "不要改变银簪"
+        ],
+        "reference_assets": [],
+        "locked": false
+      }
+    ],
+    "relationships": [],
+    "voice": {
+      "provider": "to_be_selected",
+      "voice_id": "to_be_selected",
+      "style": "soft but determined",
+      "age_range": "young_adult",
+      "emotion_range": "quiet fear to restrained resolve"
+    },
+    "reference_assets": [],
+    "locked_asset_ids": [],
+    "negative_rules": [
+      "不要改变发色",
+      "不要换成现代服装",
+      "不要变成欧美脸",
+      "不要增加额外发饰",
+      "不要改变银色发簪"
+    ],
+    "frozen_version": "characters_v001",
+    "review_file": null
+  }
+]

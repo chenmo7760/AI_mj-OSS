@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tasks",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["task_id", "type", "status", "version", "retry_count"],
+    "properties": {
+      "task_id": { "type": "string" },
+      "type": { "type": "string" },
+      "shot_id": { "type": ["string", "null"] },
+      "episode_id": { "type": ["string", "null"] },
+      "style_profile_id": { "type": ["string", "null"] },
+      "provider": { "type": ["string", "null"] },
+      "model": { "type": ["string", "null"] },
+      "mode": { "type": ["string", "null"] },
+      "generation_mode": { "type": ["string", "null"] },
+      "reference_mode": { "type": ["string", "null"] },
+      "provider_task_id": { "type": ["string", "null"] },
+      "provider_request_id": { "type": ["string", "null"] },
+      "status": { "type": "string" },
+      "version": { "type": "integer" },
+      "retry_count": { "type": "integer" },
+      "fallback_provider": { "type": ["string", "null"] },
+      "prompt_file": { "type": ["string", "null"] },
+      "reference_images": { "type": "array", "items": { "type": "string" } },
+      "first_frame_url": { "type": ["string", "null"] },
+      "last_frame_url": { "type": ["string", "null"] },
+      "provider_params": { "type": "object" },
+      "depends_on": { "type": "array", "items": { "type": "string" } },
+      "expected_output": { "type": ["string", "null"] },
+      "candidate_policy": { "type": "object" },
+      "quality_gate_status": { "type": "string" },
+      "stale": { "type": "boolean" },
+      "stale_reason": { "type": ["string", "null"] },
+      "blocked_by": { "type": ["string", "null"] },
+      "error": { "type": ["string", "null"] }
+    }
+  }
+}

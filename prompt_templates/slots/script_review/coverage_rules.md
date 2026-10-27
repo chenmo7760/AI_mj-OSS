@@ -1,0 +1,3 @@
+- Check every `must_keep` source event is represented.
+- Check script beats cite event IDs.
+- Flag missing, merged, or invented plot facts.

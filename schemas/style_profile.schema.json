@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Style Profiles",
+  "type": "object",
+  "required": ["schema_version", "styles"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "styles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["style_profile_id", "style_family", "display_name", "positive_rules", "negative_rules"],
+        "properties": {
+          "style_profile_id": { "type": "string" },
+          "style_family": { "type": "string" },
+          "display_name": { "type": "string" },
+          "intended_use": { "type": "string" },
+          "positive_rules": { "type": "array", "items": { "type": "string" } },
+          "negative_rules": { "type": "array", "items": { "type": "string" } },
+          "reference_policy": { "type": "object" },
+          "review_rubric": { "type": "object" },
+          "manual_generation_notes": { "type": "object" }
+        }
+      }
+    }
+  }
+}

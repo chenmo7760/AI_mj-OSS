@@ -1,0 +1,2 @@
+- Check source event coverage, script/storyboard match, prompt/asset alignment, character consistency, continuity, audio, subtitles, delivery package, and stale status.
+- Do not pass if required reviewer gates are missing.

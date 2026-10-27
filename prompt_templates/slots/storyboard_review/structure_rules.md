@@ -1,0 +1,2 @@
+- Check required shot fields, stable shot IDs, duration, camera, action, result, event IDs, prompt placeholders, and status.
+- Flag shots with multiple unrelated actions or unclear composition.

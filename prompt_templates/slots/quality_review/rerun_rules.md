@@ -1,0 +1,2 @@
+- Identify earliest fix point: source, script, character, storyboard, prompt, keyframe, provider params, asset, voice, or export.
+- Separate must-rerun items from accepted risks.

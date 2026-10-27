@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid Assignments",
+  "type": "object",
+  "required": ["schema_version", "episode_id", "grids"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "grids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["grid_id", "rows", "cols", "cells"],
+        "properties": {
+          "grid_id": { "type": "string" },
+          "source_asset_id": { "type": ["string", "null"] },
+          "rows": { "type": "integer" },
+          "cols": { "type": "integer" },
+          "prompt_file": { "type": ["string", "null"] },
+          "mode": { "type": "string" },
+          "cells": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["cell_index", "row", "col", "shot_id", "frame_type"],
+              "properties": {
+                "cell_index": { "type": "integer" },
+                "row": { "type": "integer" },
+                "col": { "type": "integer" },
+                "shot_id": { "type": "string" },
+                "frame_type": { "type": "string" },
+                "crop_path": { "type": ["string", "null"] },
+                "selected": { "type": "boolean" },
+                "notes": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

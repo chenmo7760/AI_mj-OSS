@@ -1,0 +1,2 @@
+- Check hook strength, pacing, dialogue economy, character consistency, and episode ending.
+- Flag scenes that are too vague to storyboard.

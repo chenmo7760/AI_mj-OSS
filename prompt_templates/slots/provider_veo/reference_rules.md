@@ -1,0 +1,2 @@
+- Map first frame to `first_frame`, last frame to `last_frame`, and other references to `reference_image`.
+- Block payload creation when route requires missing frames.

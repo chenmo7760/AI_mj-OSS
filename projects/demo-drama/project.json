@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "project_id": "demo-drama",
+  "title": "Synthetic palace-fiction demo",
+  "format": "vertical_short_drama",
+  "target_platform": [
+    "kuaishou",
+    "douyin"
+  ],
+  "episode_duration_sec": 120,
+  "visual_style": "cinematic motion comic, Chinese fantasy, vertical 9:16",
+  "style_profiles_file": "style_profiles/style_profiles.json",
+  "style_profile_id": "style_motion_comic_v001",
+  "allowed_style_profile_ids": [
+    "style_motion_comic_v001",
+    "style_live_action_light_realism_v001"
+  ],
+  "skill_source": ".agents/skills",
+  "prompt_template_registry": "prompt_templates/registry.json",
+  "provider_capabilities_file": "provider_capabilities/provider_capabilities.json",
+  "global_asset_library": "global_assets.json",
+  "asset_resolution_order": [
+    "global",
+    "project",
+    "episode",
+    "shot"
+  ],
+  "delivery_policy": {
+    "include_final_mp4": true,
+    "include_shot_segments": true,
+    "include_source_assets": true,
+    "include_prompt_package": true,
+    "include_subtitles": true
+  },
+  "quality_gate_policy": {
+    "required_before_generation": true,
+    "required_before_export": true,
+    "max_auto_fix_rounds": 2
+  },
+  "status": "synthetic_demo",
+  "created_at": "2026-07-07"
+}

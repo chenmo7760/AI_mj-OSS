@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Manga Project",
+  "type": "object",
+  "required": ["schema_version", "project_id", "title", "format", "quality_gate_policy", "status"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "project_id": { "type": "string" },
+    "title": { "type": "string" },
+    "format": { "type": "string" },
+    "target_platform": { "type": "array", "items": { "type": "string" } },
+    "episode_duration_sec": { "type": "number" },
+    "visual_style": { "type": "string" },
+    "style_profiles_file": { "type": ["string", "null"] },
+    "style_profile_id": { "type": ["string", "null"] },
+    "allowed_style_profile_ids": { "type": "array", "items": { "type": "string" } },
+    "skill_source": { "type": "string" },
+    "prompt_template_registry": { "type": ["string", "null"] },
+    "provider_capabilities_file": { "type": ["string", "null"] },
+    "global_asset_library": { "type": ["string", "null"] },
+    "asset_resolution_order": { "type": "array", "items": { "type": "string" } },
+    "delivery_policy": { "type": "object" },
+    "quality_gate_policy": {
+      "type": "object",
+      "required": ["required_before_generation", "required_before_export", "max_auto_fix_rounds"],
+      "properties": {
+        "required_before_generation": { "type": "boolean" },
+        "required_before_export": { "type": "boolean" },
+        "max_auto_fix_rounds": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "status": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

@@ -1,0 +1,5 @@
+- Compare available candidates; selected assets need quality notes.
+- Compare candidate style against the active `style_profile_id`. Photorealistic output is acceptable for `style_live_action_light_realism_v001`; comic or illustrated output is acceptable for `style_motion_comic_v001`.
+- If a candidate uses a different style than the project default, require an approved shot-level `style_profile_id` override or reject it as style drift.
+- Do not pass stale assets.
+- If no candidate is good enough, require targeted rerun instead of forcing selection.

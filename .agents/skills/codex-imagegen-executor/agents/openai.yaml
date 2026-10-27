@@ -1,0 +1,4 @@
+interface:
+  display_name: "codex-imagegen-executor"
+  short_description: "Codex subagent image generation executor"
+  default_prompt: "Use this role to generate AI manga/drama images through a Codex subagent and register local assets."

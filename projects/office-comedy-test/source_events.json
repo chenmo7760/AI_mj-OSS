@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "event_office_001",
+    "source": "user_theme",
+    "chapter": "ep01",
+    "summary": "Demo Worker rushes into the office with coffee and discovers the whole team waiting for a serious meeting.",
+    "characters": ["char_demo_worker", "char_demo_manager"],
+    "location": "modern open office",
+    "must_keep": true,
+    "dramatic_function": "setup",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s001"],
+    "frozen_version": "source_events_v001",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  },
+  {
+    "event_id": "event_office_002",
+    "source": "user_theme",
+    "chapter": "ep01",
+    "summary": "A tiny office robot vacuum bumps Demo Worker's chair at the worst possible moment, sending his sticky-note-covered weekly report into the air.",
+    "characters": ["char_demo_worker", "char_demo_manager"],
+    "location": "meeting area inside modern office",
+    "must_keep": true,
+    "dramatic_function": "comic accident",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s002"],
+    "frozen_version": "source_events_v001",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  },
+  {
+    "event_id": "event_office_003",
+    "source": "user_theme",
+    "chapter": "ep01",
+    "summary": "Demo Manager catches one sticky note on his face while Demo Worker freezes, turning the serious meeting into silent chaos.",
+    "characters": ["char_demo_worker", "char_demo_manager"],
+    "location": "meeting area inside modern office",
+    "must_keep": true,
+    "dramatic_function": "visual punchline",
+    "adapted_episode": "ep01",
+    "adapted_shots": ["ep01_s003"],
+    "frozen_version": "source_events_v001",
+    "review_file": "episodes/ep01/reviews/ep01_source_event_review_v001.md"
+  }
+]

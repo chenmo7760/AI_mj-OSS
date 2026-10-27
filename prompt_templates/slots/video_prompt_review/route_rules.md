@@ -1,0 +1,2 @@
+- Check `shot_routes.json`, provider capability, `reference_mode`, duration, aspect ratio, and required first/last/reference inputs.
+- Block first-last video tasks that lack first or last frame.

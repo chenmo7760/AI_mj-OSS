@@ -1,0 +1,6 @@
+- Use concise video prompt prose.
+- Do not include subtitles or dialogue unless provider supports it.
+- Preserve duration, aspect ratio, camera motion, and action beats.
+- Include the active style profile line in the prompt for Gemini/Veo web handoff.
+- For `style_motion_comic_v001`, explicitly ask for colorful motion-comic vertical drama and reject live-action drift.
+- For `style_live_action_light_realism_v001`, explicitly ask for cinematic live-action light realism and reject comic/anime drift or celebrity likeness.
